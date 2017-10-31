@@ -11,7 +11,7 @@ $ bundle install --path vendor/bundle
 ```
 
 # write config.yml
-- check `config.yml` as below
+- write `config.yml` as below
 
 ```
 fm_server:
