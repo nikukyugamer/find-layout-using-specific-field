@@ -1,5 +1,6 @@
 require 'bundler/setup'
 require 'filemaker'
+require 'yaml'
 
 config_file = YAML.load_file('config.yml')
 fm_server = Filemaker::Server.new do |config|
