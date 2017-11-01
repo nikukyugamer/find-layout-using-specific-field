@@ -1,17 +1,17 @@
 # What's this?
 - Find layout name using specific field in FileMaker
 
-# required gem
+# Required gem
 - [filemaker](https://github.com/mech/filemaker-ruby)
 
-# install gem
+# Install gem
 
 ```bash
 $ bundle install --path vendor/bundle
 ```
 
-# write config.yml
-- check `config.yml` as below
+# Write config.yml
+- write `config.yml` as below
 
 ```
 fm_server:
@@ -22,13 +22,13 @@ fm_server:
 target_field_name: birthday
 ```
 
-# exec script
+# Exec script
 
 ```bash
 $ ruby find_layout_using_specific_field.rb
 ```
 
-# result
+# Result
 
 ```bash
 $ ruby find_layout_using_specific_field.rb
