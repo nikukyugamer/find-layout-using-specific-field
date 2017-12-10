@@ -11,7 +11,7 @@ def fm_server
   end
 end
 
-def searched_values
+def initialize
   @target_field_name  = CONFIG_FILE['target_field_name']
   @db_name            = CONFIG_FILE['fm_server']['db_name']
   @layout_names       = fm_server.database[@db_name].layouts.all # Array
@@ -29,5 +29,5 @@ def layout_name_using_specific_field
   end
 end
 
-searched_values
+initialize
 layout_name_using_specific_field
