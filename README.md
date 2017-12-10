@@ -4,12 +4,6 @@
 # Required gem
 - [filemaker](https://github.com/mech/filemaker-ruby)
 
-# Install gem
-
-```bash
-$ bundle install --path vendor/bundle
-```
-
 # Write config.yml
 - write `config.yml` as below
 
@@ -28,14 +22,20 @@ target_field_name: birthday
 $ ruby find_layout_using_specific_field.rb
 ```
 
+or
+
+```bash
+$ bundle exec ruby find_layout_using_specific_field.rb
+```
+
 # Result
 
 ```bash
-$ ruby find_layout_using_specific_field.rb
-layout_01
-layout_03
-layout_07
-layout_10
+$ bundle exec ruby find_layout_using_specific_field.rb
+layout_name_01
+layout_name_03
+layout_name_07
+layout_name_10
 ...
 ```
 
