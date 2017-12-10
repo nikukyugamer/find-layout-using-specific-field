@@ -4,7 +4,6 @@ require 'yaml'
 CONFIG_FILE = YAML.load_file('config.yml')
 
 def fm_server
-  config_file = YAML.load_file('config.yml')
   fm_server = Filemaker::Server.new do |config|
     config.host         = CONFIG_FILE['fm_server']['host']
     config.account_name = CONFIG_FILE['fm_server']['username']
