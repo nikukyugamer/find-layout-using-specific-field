@@ -1,6 +1,6 @@
 fm_server:
-  host: '123.123.123.123'
-  username: 'my_username'
-  password: 'my_password'
-  db_name: 'target_db_name'
+  host: 123.123.123.123
+  username: my_username
+  password: my_password
+  db_name: target_db_name
 target_field_name: birthday
