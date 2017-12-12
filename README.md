@@ -4,15 +4,27 @@
 # Required gem
 - [filemaker](https://github.com/mech/filemaker-ruby)
 
+# Prepare
+
+```bash
+$ bundle install
+```
+
+or
+
+```bash
+$ gem install filemaker
+```
+
 # Write config.yml
 - write `config.yml` as below
 
 ```
 fm_server:
-  host: '123.123.123.123'
-  username: 'my_username'
-  password: 'my_password'
-  db_name: 'target_db_name'
+  host: 123.123.123.123
+  username: my_username
+  password: my_password
+  db_name: target_db_name
 target_field_name: birthday
 ```
 
@@ -31,11 +43,11 @@ $ bundle exec ruby find_layout_using_specific_field.rb
 # Result
 
 ```bash
-$ bundle exec ruby find_layout_using_specific_field.rb
-layout_name_01
-layout_name_03
-layout_name_07
-layout_name_10
+$ ruby find_layout_using_specific_field.rb
+members
+profiles
+calendars
+special_days
 ...
 ```
 
