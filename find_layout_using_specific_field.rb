@@ -21,7 +21,7 @@ class FindLayoutUsingSpecificField
   def layout_name_using_specific_field
     @layout_names.each do |layout_name|
       begin
-        fm_server.database[@db_name].layout[layout_name].view.fields.each do |field_name, field_value|
+        fm_server.database[@db_name].layout[layout_name].view.fields.keys.each do |field_name|
           puts "#{layout_name}" if field_name == @target_field_name
         end
       rescue => exception
@@ -31,5 +31,5 @@ class FindLayoutUsingSpecificField
   end
 end
 
-find_layout = new FindLayoutUsingSpecificField
+find_layout = FindLayoutUsingSpecificField.new
 find_layout.layout_name_using_specific_field
