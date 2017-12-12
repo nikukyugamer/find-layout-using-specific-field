@@ -25,7 +25,7 @@ class FindLayoutUsingSpecificField
           puts "#{layout_name}" if field_name == @target_field_name
         end
       rescue => exception
-        puts exception # `Layout is missing`...
+        puts exception # `Unknown response status = 502 (Layout is missing)`...
       end
     end
   end
