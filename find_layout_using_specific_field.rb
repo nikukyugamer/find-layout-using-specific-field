@@ -13,8 +13,8 @@ class FindLayoutUsingSpecificField
   end
 
   def initialize
-    @target_field_name  = CONFIG_FILE['target_field_name']
-    @db_name            = CONFIG_FILE['fm_server']['db_name']
+    @db_name            = ARGV[0]
+    @target_field_name  = ARGV[1]
     @layout_names       = fm_server.database[@db_name].layouts.all # Array
   end
 
