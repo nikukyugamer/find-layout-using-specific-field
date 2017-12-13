@@ -21,29 +21,29 @@ $ gem install filemaker
 
 ```
 fm_server:
-  host: 123.123.123.123
+  host: 10.10.10.100
   username: my_username
   password: my_password
-  db_name: target_db_name
-target_field_name: birthday
 ```
 
 # Exec script
+- ARGV[0] is database name
+- ARGV[1] is target field name
 
 ```bash
-$ ruby find_layout_using_specific_field.rb
+$ ruby find_layout_using_specific_field.rb customers birthday
 ```
 
 or
 
 ```bash
-$ bundle exec ruby find_layout_using_specific_field.rb
+$ bundle exec ruby find_layout_using_specific_field.rb customers birthday
 ```
 
 # Result
 
 ```bash
-$ ruby find_layout_using_specific_field.rb
+$ ruby find_layout_using_specific_field.rb customers birthday
 members
 profiles
 calendars
