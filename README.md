@@ -10,12 +10,6 @@
 $ bundle install
 ```
 
-or
-
-```bash
-$ gem install filemaker
-```
-
 # Write config.yml
 - write `config.yml` as below
 
@@ -31,19 +25,13 @@ fm_server:
 - ARGV[1] is target field name
 
 ```bash
-$ ruby find_layout_using_specific_field.rb customers birthday
-```
-
-or
-
-```bash
 $ bundle exec ruby find_layout_using_specific_field.rb customers birthday
 ```
 
 # Result
 
 ```bash
-$ ruby find_layout_using_specific_field.rb customers birthday
+$ bundle exec ruby find_layout_using_specific_field.rb customers birthday
 members
 profiles
 calendars
